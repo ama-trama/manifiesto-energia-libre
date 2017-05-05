@@ -14,6 +14,8 @@
 .clearfix:before, .clearfix:after { content: ''; display: table; }
 .clearfix:after { clear: both; }
 
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans');
+
 @page  
 { 
     size: auto;   /* auto is the initial value */ 
@@ -56,7 +58,7 @@
  p {
  	font-size: 18px !important;
  	color: #333;
- 	line-height: 22px;
+ 	line-height: 22px !important;
  }
 }
 
@@ -69,7 +71,18 @@ article h3 {
 	    -webkit-transition: all 0.38s cubic-bezier(0.7, 0, 0.3, 1);
     -moz-transition: all 0.38s cubic-bezier(0.7, 0, 0.3, 1);
     transition: all 0.38s cubic-bezier(0.7, 0, 0.3, 1);
-	font-size: 16px;margin: 0 !important;font-weight: 600;font-size: 13px;position: fixed;bottom: 10px;right: 15px;width: 80px;color: #999;opacity: 0.5;line-height: 15px;text-align: right;
+	font-size: 16px;
+	margin: 0 !important;
+	font-weight: 600;
+	font-size: 13px;
+	position: fixed;
+	bottom: 10px;
+	right: 15px;
+	width: 80px;
+	color: #999;
+	opacity: 0.5;
+	line-height: 15px;
+	text-align: right;
 }
 
 article h3:hover {
