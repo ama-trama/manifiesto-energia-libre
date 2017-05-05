@@ -33,6 +33,12 @@
   	background: #000 !important;
     padding: 5px !important;
   }
+
+	article h3 {
+  	opacity: 1 !important;
+  	background: #000 !important;
+    padding: 5px !important;
+  }
 }
 
 @media print {
@@ -52,6 +58,11 @@
  	color: #333;
  	line-height: 22px;
  }
+}
+
+.logo-fill {
+	fill: #f1f1f1;
+	opacity: 0.8;
 }
 
 article h3 {
