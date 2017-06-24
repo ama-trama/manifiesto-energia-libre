@@ -7,8 +7,8 @@
   top: 64px;
   overflow: hidden;
   content: "";
-  display: table;
-  table-layout: fixed;
+  /*display: table;*/
+  /*table-layout: fixed;*/
   z-index: 1;
 }
 
