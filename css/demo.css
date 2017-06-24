@@ -1,20 +1,47 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:300,400,700);
-@font-face {
-	font-weight: normal;
-	font-style: normal;
-	font-family: 'codropsicons';
-	src:url('../fonts/codropsicons/codropsicons.eot');
-	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
-		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
-		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
-}
-
 *, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
 .clearfix:before, .clearfix:after { content: ''; display: table; }
 .clearfix:after { clear: both; }
 
-@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans');
+.top-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 70px;
+	background: #333;
+}
+
+@-webkit-keyframes movearound {
+	0% {
+		fill:#f1f1f1;
+	}
+	20% {
+		fill:#f1f1f1;
+	}
+	25% {
+		fill:#eed518;
+	}
+	50% {
+		fill:#f1f1f1;
+	}
+	70% {
+		fill:#eed518;
+	}
+	75% {
+		fill:#eed518;
+	}
+	100% {
+		fill:#f1f1f1;
+	}
+}
+
+
+
+	.logo-fill{
+		-webkit-animation: movearound 18s ease infinite normal;
+	}
+
+
 
 @page  
 { 
@@ -28,6 +55,12 @@
   article  {
     max-width: 98% !important;
 
+  }
+
+  p {
+  	    line-height: 26px !important;
+    font-size: 21px !important;
+    text-align: left !important;
   }
 
   article h3 {
@@ -67,30 +100,37 @@
 	opacity: 0.8;
 }
 
-article h3 {
-	    -webkit-transition: all 0.38s cubic-bezier(0.7, 0, 0.3, 1);
-    -moz-transition: all 0.38s cubic-bezier(0.7, 0, 0.3, 1);
-    transition: all 0.38s cubic-bezier(0.7, 0, 0.3, 1);
-	font-size: 16px;
-	margin: 0 !important;
-	font-weight: 600;
-	font-size: 13px;
+.uni-logo {
 	position: fixed;
-	bottom: 10px;
-	right: 15px;
-	width: 80px;
-	color: #999;
-	opacity: 0.5;
-	line-height: 15px;
-	text-align: right;
+	left: 10px;
+	top: 10px;
 }
 
-article h3:hover {
-    line-height: 22px;
-    font-size: 18px;
-    width: 140px;
+.source-link {
+    -webkit-transition: all 0.38s cubic-bezier(0.7, 0, 0.3, 1);
+    -moz-transition: all 0.38s cubic-bezier(0.7, 0, 0.3, 1);
+    transition: all 0.38s cubic-bezier(0.7, 0, 0.3, 1);
+    font-size: 16px;
+    margin: 0 !important;
+    font-weight: 600;
+    font-size: 13px;
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    width: 100px;
+    color: #999 !important;
     opacity: 1;
-    color: #fff;
+    line-height: 15px;
+    text-align: right;
+    background: #333;
+    padding: 15px 5px 15px 5px;
+    border: 1px solid #333;
+}
+
+.source-link:hover {
+    opacity: 1;
+    color: #fff !important;
+    border: 1px solid #f1f1f1;
 }
 
 body {
@@ -98,7 +138,7 @@ body {
 	color: #fff;
 	font-weight: 400;
 	font-size: 1em;
-	font-family: 'Raleway', Arial, sans-serif;
+	font-family: 'Alegreya Sans';
 }
 
 a {
@@ -121,6 +161,31 @@ a:hover, a:focus {
 section {
 	padding: 1em;
 	text-align: center;
+}
+
+article h4 {
+    text-align: center;
+    font-weight: 100;
+    font-size: 32px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+    margin: 0;
+}
+
+article ul {
+	font-family: 'Alegreya Sans';
+	line-height: 30px;
+	font-size: 23px;
+	padding: 10px 22px;
+}
+
+article li {
+	margin: 10px 0;
+} 
+
+article small {
+	font-size: 23px;
+	font-weight: 400;
 }
 
 /* Header */

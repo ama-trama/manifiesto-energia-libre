@@ -7,6 +7,37 @@
 	.st1{fill:#EED518;}
 	.st2{fill:#EFD519;}
 	.st3{clip-path:url(#XMLID_2_);}
+
+
+	@-webkit-keyframes movearound {
+		0% {
+			transform: rotate(0) scale(1);
+		}
+		20% {
+			transform: rotate(0) scale(1);
+		}
+		50% {
+			transform: rotate(360deg);
+		}
+		60% {
+			transform: rotate(0) scale(.1);
+		}
+		100% {
+			transform: rotate(0deg) scale(1);
+		}
+	}
+
+
+
+	.st3 {
+		-webkit-transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1);
+		-moz-transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1);
+		transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1);
+		-webkit-animation: movearound 13s ease infinite normal;
+		transform-origin: 50% 50%;
+
+	}
+
 </style>
 <path id="XMLID_112_" class="st0" d="M162.3,97.2l-40,23.1c-1.1,0.6-2.3,0.6-3.4,0L77.6,97.2c-1.1-0.6-2.9-1.7-2.9-2.9V48
 	c0-1.2,1.8-2.3,2.9-2.9l40.7-23.1c1.1-0.6,2.6-0.6,3.7,0L162.1,45c1.1,0.6,1.7,1.7,1.7,2.9v46.3C163.8,95.5,163.3,96.6,162.3,97.2z"
